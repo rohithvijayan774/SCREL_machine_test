@@ -42,6 +42,12 @@ class UserDetails extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+              IconButton(
+                onPressed: () {
+                  Navigator.of(context).pop();
+                },
+                icon: const Icon(Icons.arrow_back_ios_new_outlined),
+              ),
               Padding(
                 padding: const EdgeInsets.all(20.0),
                 child: Row(
@@ -103,6 +109,9 @@ class UserDetails extends StatelessWidget {
                             ),
                           ),
                         ],
+                      ),
+                      const SizedBox(
+                        height: 20,
                       )
                     ],
                   ),
